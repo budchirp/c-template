@@ -10,7 +10,7 @@
 #### Clone the repo
 
 ```sh
-git clone https://github.com/CanKolay5677/c-template && cd c-template/
+git clone https://github.com/CanKolay3499/c-template && cd c-template/
 ```
 
 #### Compile the code
