@@ -22,7 +22,7 @@ include_directories(include)
 
 add_executable(${EXEC_NAME} ${SRC} ${HEADERS})
 
-target_include_directories(out PUBLIC ${HEADERS})
+target_include_directories(${EXEC_NAME} PUBLIC ${HEADERS})
 
 if(CMAKE_BUILD_TYPE MATCHES "Debug")
   set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -Werror -fsanitize=undefined -fsanitize=address")
