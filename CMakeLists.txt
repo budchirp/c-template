@@ -1,8 +1,15 @@
-cmake_minimum_required(VERSION 3.18)
+cmake_minimum_required(VERSION 3.25)
 
-# EDIT HERE
 set(EXEC_NAME "out")
 project(c-template VERSION 0.1.0)
+
+if(NOT DEFINED CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE "Debug")
+endif()
+
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+  set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+endif()
 
 file(GLOB HEADERS
   "include/*.h"
@@ -21,17 +28,4 @@ file(GLOB SRC
 include_directories(include)
 
 add_executable(${EXEC_NAME} ${SRC} ${HEADERS})
-
 target_include_directories(${EXEC_NAME} PUBLIC ${HEADERS})
-
-if(CMAKE_BUILD_TYPE MATCHES "Debug")
-  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -Werror -fsanitize=undefined -fsanitize=address")
-  target_link_options(${EXEC_NAME} BEFORE PUBLIC -fsanitize=undefined PUBLIC -fsanitize=address)
-endif()
-
-if(CMAKE_BUILD_TYPE MATCHES "Release")
-  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -O3")
-endif()
-
-source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${TARGET_SOURCES})
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
