@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/mnt/code/c-template/cmake-build-debug",
+  "command": "/usr/bin/cc  -I/mnt/code/c-template/include -g -fdiagnostics-color=always -o CMakeFiles/out.dir/src/main.c.o -c /mnt/code/c-template/src/main.c",
+  "file": "/mnt/code/c-template/src/main.c",
+  "output": "CMakeFiles/out.dir/src/main.c.o"
+}
+]

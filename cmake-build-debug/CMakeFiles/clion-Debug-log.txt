@@ -1,0 +1,4 @@
+/mnt/apps/IDEs/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -S /mnt/code/c-template -B /mnt/code/c-template/cmake-build-debug
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /mnt/code/c-template/cmake-build-debug
