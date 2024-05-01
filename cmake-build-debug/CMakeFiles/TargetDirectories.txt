@@ -1,3 +1,0 @@
-/mnt/code/c-template/cmake-build-debug/CMakeFiles/out.dir
-/mnt/code/c-template/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/code/c-template/cmake-build-debug/CMakeFiles/rebuild_cache.dir
