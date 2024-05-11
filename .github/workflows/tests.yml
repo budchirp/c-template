@@ -26,4 +26,4 @@ jobs:
         run: make -j$(nproc)
 
       - name: Run compiled code
-        run: ./out
+        run: ./c-template

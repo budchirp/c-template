@@ -37,5 +37,5 @@ cmake ../ && make -j$(nproc)
 4. Have fun!
 
 ```sh
-./build/EXEC_NAME
+./EXEC_NAME
 ```
