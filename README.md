@@ -1,6 +1,5 @@
-<div align="center">
-  <h1>c-template</h1>
-</div>
+<h1 align="center">c-template</h1>
+<h2 align="center">C/C++ template for starting your projects faster</h2>
 
 <p align="center">
   <img alt="Stargazers" src="https://img.shields.io/github/stars/budchirp/c-template?style=for-the-badge&colorA=0b1221&colorB=ff8e8e" />
@@ -13,8 +12,8 @@
 
 ### Requirements
 
-1. C compiler
-2. CMake
+1. C/C++ compiler
+2. CMake & Make
 
 ### How to install?
 
@@ -36,3 +35,7 @@ cmake ../ && make -j$(nproc)
 > NOTE: If you're using fish, remove the `$` sign.
 
 4. Have fun!
+
+```sh
+./build/EXEC_NAME
+```
