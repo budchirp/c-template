@@ -13,9 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Create build dir
-        run: mkdir build/ && cd build/
-
       - name: Build
         run: cmake ${{ github.workspace }}
 
